@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matcha Tea 🍵</title>
+    <style>
+      body {
+        background: linear-gradient(
+          108deg,
+          rgb(75, 47, 23) 45%,
+          rgb(152, 114, 82) 76%,
+          rgb(157, 127, 101) 93%
+        );
+        color: rgb(240, 248, 195);
+      }
+      h1 {
+        text-align: center;
+        color: yellowgreen;
+        font-size: 50px;
+        padding-top: 20px;
+      }
+      h2 {
+        text-align: center;
+        color: rgb(202, 219, 126);
+        border: 1px solid rgb(202, 219, 126);
+        padding: 10px;
+        margin: 30px 28%;
+        font-size: 25px;
+        font-weight: 600;
+      }
+
+      .italic {
+        font-style: italic;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+
+      figcaption {
+        text-align: center;
+        padding: 10px;
+        font-size: 17px;
+      }
+      .info {
+        padding-top: 20px;
+        line-height: 1.5;
+        font-size: 19px;
+      }
+      ul {
+        list-style-type: none;
+      }
+
+      h3 {
+        padding-top: 30px;
+      }
+
+      .wiki {
+        font-size: 18px;
+        padding-top: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: yellow;
+        transition: all 200ms ease;
+        opacity: 1;
+      }
+      a:hover {
+        color: white;
+        text-decoration: underline;
+      }
+
+      ol p {
+        margin-top: -20px;
+      }
+
+      button {
+        display: block;
+        margin: 60px auto;
+        padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: inset 0 -3em 3em rgba(233, 230, 230, 0.1),
+          0 0 0 2px yellowgreen, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+        background: rgb(240, 248, 195);
+        font-size: 16px;
+        color: rgb(7, 54, 7);
+      }
+
+      .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+
+      footer {
+        line-height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Matcha Tea</h1>
+      <h2>The benefits of Green Matcha Tea 🍵</h2>
+
+      <img alt="matcha tea" src="./matcha.jpg" />
+      <figcaption>
+        Antioxidant-packed matcha contains more caffeine than coffee and green
+        tea.
+      </figcaption>
+
+      <div class="info">
+        <ul>
+          <li>
+            <h3>WHAT'S MATCHA?</h3>
+            <p>
+              It is fine ground powder of special green tea leaves, called
+              <em>tencha</em>.
+            </p>
+          </li>
+
+          <li>
+            <h3>WHAT'S TENCHA THEN?</h3>
+            <p>
+              <span class="italic">Tencha</span> is a tea leaf that is harvested
+              in a special way. To make <span class="italic">tencha</span>, the
+              tea plants are covered for more than 20 days before picking up the
+              tea leaves so that the plants try to grow faster to get sunlight,
+              using their energy to grow instead of thickening their leaves.
+              This results in thin and soft leaves, that add a lot of flavor to
+              the tea.
+            </p>
+            <p>
+              The leaves are then left to dry, without rolling. Stems and leaf
+              veins are discarded.
+            </p>
+          </li>
+          <li>
+            <h3>MATCHA PROPERTIES</h3>
+            <div class="list">
+              <ol>
+                <li>
+                  <h4>High in antioxidants:</h4>
+                  <p>
+                    Matcha contains a type of potent antioxidant called EGCG
+                    (epigallocatechin gallate) that has cancer-fighting
+                    properties and help decrease several heart-related diseases.
+                  </p>
+                </li>
+                <li>
+                  <h4>Boosts the metabolism:</h4>
+                  <p>
+                    Matcha has properties that boost metabolism and burn fat.
+                  </p>
+                </li>
+                <li>
+                  <h4>Relaxing effects:</h4>
+                  <p>
+                    Matcha is very rich in aminoacids that help reduce stress
+                    and enhance relaxation.
+                  </p>
+                </li>
+                <li>
+                  <h4>Helps cognitive functions:</h4>
+                  <p>It is proven to increase memory.</p>
+                </li>
+              </ol>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button>👉 <strong>Buy Matcha Green Tea</strong> 👈</button>
+  </body>
+  <hr />
+  <footer>
+    <p class="wiki">
+      Learn more on
+      <a href="https://it.wikipedia.org/wiki/Matcha" target="_blank"
+        >wikipedia</a
+      >
+      <br />
+
+      This page was built by
+      <a href="https://github.com/potpot89" target="_blank">Jamila Zini</a>
+    </p>
+  </footer>
+
+  <script>
+    function buyMatcha() {
+      let name = prompt("What's your name?");
+      let email = prompt("What's your email?");
+      if (email === "") {
+        alert("please input a valid email address");
+      } else {
+        alert(`Thank you ${name}! We'll be in touch! 😃`);
+      }
+    }
+    let buyButton = document.querySelector("button");
+    buyButton.addEventListener(`click`, buyMatcha);
+  </script>
+</html>
